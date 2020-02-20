@@ -35,8 +35,8 @@ return(
           )
         }else{
           return(
-            <div className="nav-warpper">
-              <header className="secondary-header">
+            <div className="no-nav-wrapper">
+              <header>
                 <h2>
                   <Link
                     to="/"
