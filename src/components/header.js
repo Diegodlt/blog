@@ -35,14 +35,14 @@ return(
         }else{
           return(
             <div className="nav-warpper">
-              <header>
-                <h1>
+              <header className="secondary-header">
+                <h2>
                   <Link
                     to="/"
                   >
                     {props.siteTitle}
                   </Link>
-                </h1>
+                </h2>
               </header>
             </div>
           )
