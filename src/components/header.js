@@ -13,7 +13,8 @@ const mainHeader = `
 return(
   <Location>
       {({location})=>{
-        if(location.pathname === '/'){
+        const { pathname } = location;
+        if(pathname === '/' || pathname === '/about'){
           return(
             <div className="nav-wrapper">
               <header>
@@ -28,7 +29,7 @@ return(
               </header>
               <nav>
                 <Link to="/">Blog</Link>
-                <Link to="/page-2">About</Link>
+                <Link to="/about">About</Link>
               </nav>
             </div>
           )

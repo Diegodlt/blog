@@ -27,7 +27,7 @@ const IndexPage = () => {
   console.log(data);
   return(
     <Layout>
-      <SEO title="Home" />
+      <SEO title="Blog" />
       {data.allMarkdownRemark.edges.map(edge=>{
         return(
           <article key={edge.node.id}>
