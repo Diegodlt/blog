@@ -18,6 +18,9 @@ const IndexPage = () => {
               date
               subtitle
             }
+            fields{
+              slug
+            }
           }
         }
       }
@@ -31,7 +34,9 @@ const IndexPage = () => {
       {data.allMarkdownRemark.edges.map(edge=>{
         return(
           <article key={edge.node.id}>
-            <h2>{edge.node.frontmatter.title}</h2>
+            <Link to={`/${edge.node.fields.slug}`}>
+              <h2>{edge.node.frontmatter.title}</h2>
+            </Link>
             {edge.node.frontmatter.subtitle? <p>{edge.node.frontmatter.subtitle}</p>: null}
             <time>{edge.node.frontmatter.date}</time>
           </article>
