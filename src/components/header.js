@@ -28,8 +28,8 @@ return(
                 <p>Full Stack Developer</p>
               </header>
               <nav>
-                <Link to="/">Blog</Link>
-                <Link to="/about">About</Link>
+                <Link to="/" activeClassName="active-link">Blog</Link>
+                <Link to="/about" activeClassName="active-link">About</Link>
               </nav>
             </div>
           )
