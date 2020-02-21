@@ -1,27 +1,37 @@
+$gray: darkgray;
+$black: #343434;
+$blue: #3e64ff;
+$blue-light: #5edfff;
+$blue-lighter: #b2fcff;
+$blue-ligthest: #ecfcff;
+
+$heading-font: Montserrat,sans-serif;
+
 body, html {
     padding: 0;
     margin: 0;
-    font-family: Montserrat,sans-serif;
+    font-family: Georgia, serif;
 }
 
 .nav-wrapper{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 40px 0;
+    margin: 40px 0;
 }
 
 a{
     text-decoration: none;
-    color: black;
+    color: $black;
 }
 
 header{
-    color: black;
-    padding: 30px 0;
+    color: $black;
+    padding: 20px 0;
     a{
         font-weight: 600;
         letter-spacing: 2px;
+        font-family: $heading-font;
     }
     h1{
         display: inline;
@@ -36,6 +46,7 @@ header{
     header{
         a{
             letter-spacing: 0.5px;
+            color: $blue;
         }
     }
 }
@@ -43,7 +54,15 @@ header{
 nav{
     a{
         margin-left: 10px;
+        color: $gray;
+        padding: 0 5px;
     }
+}
+
+.active-link{
+    padding-bottom: 5px;
+    border-bottom: 1px solid $gray;
+    color: $black;
 }
 
 .container{
@@ -53,7 +72,7 @@ nav{
 }
 
 .content{
-    max-width: 720px;
+    max-width: 600px;
     margin: auto;
 }
 
@@ -71,9 +90,11 @@ article{
     margin-bottom: 30px;
     h2{
         margin: 0 0 10px 0;
+        color: $blue;
     }
     p{
         margin: 0 0 5px 0;
+        color: $gray;
     }
 }
 
