@@ -35,7 +35,7 @@ header{
 .no-nav-wrapper{
     header{
         a{
-            letter-spacing: 1px;
+            letter-spacing: 0.5px;
         }
     }
 }
@@ -53,7 +53,7 @@ nav{
 }
 
 .content{
-    max-width: 960px;
+    max-width: 720px;
     margin: auto;
 }
 
@@ -63,16 +63,29 @@ footer{
     padding: 20px 0;
 }
 
+time{
+    font-size: smaller;
+}
+
 article{
     margin-bottom: 30px;
-    h2, p{
+    h2{
+        margin: 0 0 10px 0;
+    }
+    p{
+        margin: 0 0 5px 0;
+    }
+}
+
+
+.post-title{
+    margin-bottom: 30px;
+    h1{
+        font-size: 2.5rem;
         margin: 0;
     }
-    h2{
-        margin-bottom: 15px;
-    }
-    time{
-        font-size: smaller;
+    p{
+        margin: 0;
     }
 }
 
