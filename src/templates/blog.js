@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/layout'
+import SEO from '../components/seo'
 
 export const query = graphql`
     query($slug: String!) {
@@ -18,6 +19,7 @@ export const query = graphql`
 const Blog = (props)=> {
     return(
         <Layout>
+            <SEO title={props.data.markdownRemark.frontmatter.title} />
             <div className="post-title">
                 <h1>{props.data.markdownRemark.frontmatter.title}</h1>
                 <time>{props.data.markdownRemark.frontmatter.date}</time>
