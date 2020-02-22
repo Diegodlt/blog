@@ -88,12 +88,14 @@ footer{
     bottom: 0;
     padding: 20px 0;
     color: $gray;
-    i{
-        margin-right: 10px; 
-        font-size: 1.25rem;
-    }
+    display: flex;
     a{
         color: $gray;
+        margin-right: 10px; 
+        font-size: 1.25rem;
+        &:last-child{
+            font-size: 1.5rem;
+        }
     }
 }
 

@@ -1,15 +1,9 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import { FaLinkedin, FaGithub } from 'react-icons/fa'
 import "../styles/layout.scss"
 
 const Layout = ({ children }) => {
@@ -31,12 +25,14 @@ const Layout = ({ children }) => {
         </div>
         <footer>
           <a href="https://github.com/Diegodlt" target="_blank" rel="noopener">
-            <i class="fab fa-github"></i>
+            <FaLinkedin />
           </a>
           <a href="https://www.linkedin.com/in/diegodlt/" target="_blank" rel="noopener">
-            <i className="fab fa-linkedin"></i>
+            <FaGithub />
           </a>
-          © {new Date().getFullYear()}
+          <div>
+            © {new Date().getFullYear()}
+          </div>
         </footer>
     </div>
   )
