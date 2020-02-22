@@ -128,4 +128,57 @@ article{
 }
 
 
-
+@media(max-width: 735px){
+    .container{
+        padding: 0 10px;
+    }
+    .nav-wrapper{
+        margin-top: 0;
+    }
+    nav{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        a{
+            flex-grow: 1;
+            margin: 0;
+            padding: 5px;
+            border: 1px solid $black;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+    header{
+        h1{
+            display: block;
+            margin-bottom: 8px;
+        }
+        p{
+            margin-left: 0;
+        }
+    }
+    .no-nav-wrapper{
+        position: absolute;
+        bottom: 0;
+        right: 10px;
+        h2{
+            margin: 0;
+        }
+    }
+    .content{
+        margin-top: 30px;
+    }
+    .active-link{
+        border: 1px solid $blue;
+        background-color: $blue-ligthest;
+    }
+    footer{
+        bottom: initial;
+        font-size: 1.5rem;
+        a{
+            font-size: 1.75rem;
+        }
+    }
+}
