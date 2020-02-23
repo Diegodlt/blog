@@ -56,6 +56,7 @@ header{
 
 nav{
     a{
+        font-family: $heading-font;
         margin-left: 10px;
         color: $gray;
         padding: 0 5px 5px 5px;
@@ -145,7 +146,7 @@ article{
             flex-grow: 1;
             margin: 0;
             padding: 5px;
-            border: 1px solid $black;
+            border: 2px solid $black;
             text-align: center;
             padding: 10px;
         }
@@ -171,7 +172,8 @@ article{
         margin-top: 30px;
     }
     .active-link{
-        border: 1px solid $blue;
+        border: 2px solid $blue;
+        color: $blue;
         background-color: $blue-ligthest;
     }
     footer{
