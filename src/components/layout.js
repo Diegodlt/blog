@@ -18,23 +18,25 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <div className="container">
-      <Header siteTitle={data.site.siteMetadata.title} />
-        <div className="content">
-          <main>{children}</main>
-        </div>
-        <footer>
-          <a href="https://github.com/Diegodlt" target="_blank" rel="noopener">
-            <FaLinkedin />
-          </a>
-          <a href="https://www.linkedin.com/in/diegodlt/" target="_blank" rel="noopener">
-            <FaGithub />
-          </a>
-          <div>
-            © {new Date().getFullYear()}
+    <>
+      <div className="container">
+        <Header siteTitle={data.site.siteMetadata.title} />
+          <div className="content">
+            <main>{children}</main>
           </div>
-        </footer>
-    </div>
+      </div>
+      <footer>
+        <a href="https://github.com/Diegodlt" target="_blank" rel="noopener">
+          <FaLinkedin />
+        </a>
+        <a href="https://www.linkedin.com/in/diegodlt/" target="_blank" rel="noopener">
+          <FaGithub />
+        </a>
+        <div>
+          © {new Date().getFullYear()}
+        </div>
+    </footer>
+  </>
   )
 }
 

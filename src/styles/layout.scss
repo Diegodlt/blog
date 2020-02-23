@@ -82,14 +82,19 @@ nav{
 .content{
     max-width: 600px;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 footer{
-    position: absolute;
+    position: fixed;
+    width: 100%;
     bottom: 0;
     padding: 20px 0;
     color: $gray;
     display: flex;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 6px -1px rgba(0, 0, 0, 0.3);
     a{
         color: $gray;
         margin-right: 10px; 
