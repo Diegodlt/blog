@@ -8,14 +8,25 @@ import SEO from '../components/seo'
 const About = ()=> {
 
     const data = useStaticQuery(query);
-    console.log("ABOUT", data )
 
     return(
         <Layout>
             <SEO title="About" />
             <Image fluid={data.fluid.childImageSharp.fluid} style={style} />
-            this is test to seee how the content is going to wrap around the image. I'm just going to write random
-            stuff until there is enough writing for me to see how the text is going to look next to the image.
+            <div className="about-page">
+                <h1>Hi</h1>
+                <p>
+                    My name is Diego and I'm a developer living in the sunshine state (Florida), currently working on front end stuff at VeriTread. 
+                    I'm pasionate about building amazing and impactful products, regardless of the framework or technology stack. 
+                </p>
+                <p>    
+                    I've worked with various JS frameworks such as React, Angular, Node, and jQuery. Java was the first programming language I learned in-depth,
+                    so it will always have special place in my heart. I also enjoy learning about cloud infrastructure.
+                </p>
+                <p>
+                    Other than that I like watching movies, driking coffee, and eating good food. 
+                </p>
+            </div>
         </Layout>
     )
 }
@@ -35,7 +46,8 @@ const query = graphql`
 const style = {
     boxShadow: 'rgba(0, 0, 0, 0.2) 0px 0px 4px 1px',
     borderRadius: '20px',
-    width: '400px'
+    width: '400px',
+    margin: 'auto'
 }
 
 

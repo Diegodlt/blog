@@ -136,6 +136,13 @@ article{
     width: 300px;
 }
 
+.about-page{
+   p{
+       font-size: 20px;
+       line-height: 1.25;
+   }
+}
+
 @media(max-width: 735px){
     .container{
         padding: 0 10px;
