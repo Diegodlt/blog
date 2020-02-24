@@ -26,10 +26,10 @@ const Layout = ({ children }) => {
         </div>
       </div>
       <footer>
-        <a href="https://github.com/Diegodlt" target="_blank" rel="noopener">
+        <a href="https://github.com/Diegodlt" target="_blank" rel="noopener noreferrer">
           <FaLinkedin />
         </a>
-        <a href="https://www.linkedin.com/in/diegodlt/" target="_blank" rel="noopener">
+        <a href="https://www.linkedin.com/in/diegodlt/" target="_blank" rel="noopener noreferrer">
           <FaGithub />
         </a>
         <div>
