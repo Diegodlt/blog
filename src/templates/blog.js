@@ -24,7 +24,7 @@ const Blog = (props)=> {
                 <h1>{props.data.markdownRemark.frontmatter.title}</h1>
                 <time>{props.data.markdownRemark.frontmatter.date}</time>
             </div>
-            <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} className="body">
+            <div dangerouslySetInnerHTML={{__html: props.data.markdownRemark.html}} className="post-body">
 
             </div>
         </Layout>
