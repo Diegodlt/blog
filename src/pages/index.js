@@ -20,6 +20,7 @@ const IndexPage = () => {
             fields{
               slug
             }
+            id
           }
         }
       }
