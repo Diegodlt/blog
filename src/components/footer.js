@@ -11,7 +11,7 @@ const Footer = (props)=> (
         <a href="https://www.linkedin.com/in/diegodlt/" target="_blank" rel="noopener noreferrer">
             <FaGithub />
         </a>
-        <a href="https://www.linkedin.com/in/diegodlt/" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.diegodlt.info" target="_blank" rel="noopener noreferrer">
             © {new Date().getFullYear()}
         </a>
     </footer>
