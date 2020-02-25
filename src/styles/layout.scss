@@ -152,9 +152,6 @@ article{
 }
 
 @media(max-width: 735px){
-    .container{
-        padding: 0 10px;
-    }
     .nav-wrapper{
         margin-top: 0;
     }
@@ -202,5 +199,8 @@ article{
         a{
             font-size: 1.75rem;
         }
+    }
+    .no-nav-footer{
+        margin-bottom: 0;
     }
 }

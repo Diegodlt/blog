@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
-import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import Footer from '../components/footer'
 import "../styles/layout.scss"
 
 const Layout = ({ children }) => {
@@ -25,17 +25,6 @@ const Layout = ({ children }) => {
           <main>{children}</main>
         </div>
       </div>
-      <footer>
-        <a href="https://github.com/Diegodlt" target="_blank" rel="noopener noreferrer">
-          <FaLinkedin />
-        </a>
-        <a href="https://www.linkedin.com/in/diegodlt/" target="_blank" rel="noopener noreferrer">
-          <FaGithub />
-        </a>
-        <div>
-          © {new Date().getFullYear()}
-        </div>
-    </footer>
   </>
   )
 }
