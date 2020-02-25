@@ -58,6 +58,7 @@ header{
 }
 
 nav{
+    display: flex;
     a{
         font-family: $heading-font;
         margin-left: 10px;
@@ -151,6 +152,10 @@ article{
    }
 }
 
+.nav-icons{
+    display: none;
+}
+
 @media(max-width: 735px){
     .nav-wrapper{
         margin-top: 0;
@@ -172,6 +177,9 @@ article{
             text-align: center;
             padding: 12px 0 11px 0;
         }
+    }
+    .nav-icons{
+        display: block;
     }
     header{
         h1{

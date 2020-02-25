@@ -26,7 +26,7 @@ return(
               </header>
               <nav>
                 <Link to="/" activeClassName="active-link">
-                  <div>
+                  <div className="nav-icons">
                     <FaBookOpen />
                   </div>
                   <div>
@@ -34,7 +34,7 @@ return(
                   </div>
                 </Link>
                 <Link to="/about" activeClassName="active-link">
-                  <div>
+                  <div className="nav-icons">
                     <FaUser />
                   </div>
                   <div>
