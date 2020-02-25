@@ -4,12 +4,9 @@ import React from "react"
 import { Location } from '@reach/router'
 
 import "../styles/layout.scss"
+import { FaBookOpen, FaUser } from 'react-icons/fa'
 
 const Header = (props) => {
-
-const mainHeader = `
-  <div className="nav-wrapper">
-`
 return(
   <Location>
       {({location})=>{
@@ -28,8 +25,22 @@ return(
                 <p>Full Stack Developer</p>
               </header>
               <nav>
-                <Link to="/" activeClassName="active-link">Blog</Link>
-                <Link to="/about" activeClassName="active-link">About</Link>
+                <Link to="/" activeClassName="active-link">
+                  <div>
+                    <FaBookOpen />
+                  </div>
+                  <div>
+                    Blog
+                  </div>
+                </Link>
+                <Link to="/about" activeClassName="active-link">
+                  <div>
+                    <FaUser />
+                  </div>
+                  <div>
+                    About
+                  </div>
+                </Link>
               </nav>
             </div>
           )
