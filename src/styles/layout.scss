@@ -106,9 +106,10 @@ footer{
     a{
         color: $gray;
         margin-right: 10px; 
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         &:last-child{
-            font-size: 1.5rem;
+            font-size: 1.25rem;
+            margin: 0;
         }
     }
 }
@@ -176,6 +177,7 @@ article{
             padding: 5px;
             text-align: center;
             padding: 12px 0 11px 0;
+
         }
     }
     .nav-icons{
@@ -209,6 +211,9 @@ article{
         margin-bottom: 50px;
         a{
             font-size: 1.75rem;
+            &:last-child{
+                font-size: 1.5rem;
+            }
         }
     }
     .no-nav-footer{
