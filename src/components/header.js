@@ -19,10 +19,10 @@ return(
                   <Link
                     to="/"
                   >
-                    {props.siteTitle}
+                    <span className="js-title">J</span>ust <span className="js-title">S</span>ome blog
                   </Link>
                 </h1>
-                <p>Full Stack Developer</p>
+                <p>By Diego De La Torre</p>
               </header>
               <nav>
                 <Link to="/" activeClassName="active-link">

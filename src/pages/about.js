@@ -10,6 +10,8 @@ const About = ()=> {
 
     const data = useStaticQuery(query);
 
+    console.log("IMAGE", data)
+    
     return(
         <>
             <Layout>
