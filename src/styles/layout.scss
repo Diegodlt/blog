@@ -34,7 +34,7 @@ header{
         font-weight: 500;
         letter-spacing: 1px;
         font-family: $heading-font;
-        font-size: 2.25rem;
+        font-size: 2.5rem;
         color: $black;
     }
     h1{
@@ -61,6 +61,8 @@ nav{
     display: flex;
     a{
         font-family: $heading-font;
+        text-transform: uppercase;
+        letter-spacing: 2px;
         margin-left: 10px;
         color: $gray;
         padding: 0 5px 5px 5px;
@@ -122,7 +124,7 @@ article{
     margin-bottom: 30px;
     h2{
         margin: 0 0 10px 0;
-        color: $blue;
+        color: $black;
     }
     p{
         margin: 0 0 5px 0;
@@ -158,10 +160,11 @@ article{
 }
 
 .js-title{
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 700;
     background-color: #e9d54d;
-    padding: 0 4px;
+    padding-left: 12px;
+    padding-top: 10px;
     margin-right: 3px;
 }
 
